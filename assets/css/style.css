@@ -1,3 +1,166 @@
+@-webkit-keyframes hnb {
+  0% {
+    border-radius: 1px;
+    width: 2px;
+    height: 2px;
+    border: 6px dotted darkyellow;
+    top: 200px;
+    left: 150px;
+  }
+  50% {
+    border-radius: 1px;
+    width: 2px;
+    height: 2px;
+    border: 6px dotted yellow;
+    top: 0px;
+    left: 150px;
+  }
+  70% {
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    border: 6px dotted blue;
+    top: -60px;
+    left: 90px;
+  }
+  90% {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border: 8px dotted red;
+    top: -100px;
+    left: 50px;
+  }
+  100% {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border: 8px dotted #ff000000;
+    top: -80px;
+    left: 50px;
+  }
+}
+
+@keyframes hnb {
+  0% {
+    border-radius: 1px;
+    width: 2px;
+    height: 2px;
+    border: 6px dotted darkyellow;
+    top: 200px;
+    left: 150px;
+  }
+  50% {
+    border-radius: 1px;
+    width: 2px;
+    height: 2px;
+    border: 6px dotted yellow;
+    top: 0px;
+    left: 150px;
+  }
+  70% {
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    border: 6px dotted blue;
+    top: -60px;
+    left: 90px;
+  }
+  90% {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border: 8px dotted red;
+    top: -100px;
+    left: 50px;
+  }
+  100% {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border: 8px dotted #ff000000;
+    top: -80px;
+    left: 50px;
+  }
+}
+
+.hnbdm {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  -webkit-animation: hnb 5s linear infinite normal;
+          animation: hnb 5s linear infinite normal;
+}
+
+@-webkit-keyframes hanabi {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  20% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2) translateY(20px);
+            transform: scale(1.2) translateY(20px);
+  }
+}
+
+@keyframes hanabi {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  20% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.2) translateY(20px);
+            transform: scale(1.2) translateY(20px);
+  }
+}
+
+.hanabi {
+  width: 80%;
+  position: absolute;
+  -webkit-animation-name: hanabi;
+          animation-name: hanabi;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.hanabi img {
+  width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,6 +184,45 @@ li {
 
 img {
   width: 100%;
+}
+
+.-deco__flower-1::before {
+  content: "";
+  width: 324px;
+  height: 292px;
+  background: url(./../image/flower_5.svg) no-repeat center/cover;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 2;
+}
+
+.-deco__flower-2::before {
+  content: "";
+  width: 324px;
+  height: 292px;
+  background: url(./../image/flower_1.svg) no-repeat center/cover;
+  position: absolute;
+  top: -130px;
+}
+
+.-deco__flower-3::before {
+  content: "";
+  width: 443px;
+  height: 380px;
+  background: url(./../image/flower_1.svg) no-repeat center/cover;
+  position: absolute;
+  top: -130px;
+}
+
+.-deco__flower-4::after {
+  content: "";
+  width: 338px;
+  height: 240px;
+  background: url(./../image/flower_2.svg) no-repeat center/cover;
+  position: absolute;
+  top: -100px;
+  right: 0;
 }
 
 .l-header {
@@ -244,6 +446,10 @@ img {
   z-index: 2;
 }
 
+.p-fireWorks {
+  position: relative;
+}
+
 .p-fireWorks__title {
   text-align: center;
   margin-top: 160px;
@@ -280,6 +486,10 @@ img {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.p-cruise {
+  position: relative;
 }
 
 .p-cruise__title {
@@ -379,6 +589,10 @@ img {
 
 .p-date__info-warn {
   display: none;
+}
+
+.p-access {
+  position: relative;
 }
 
 .p-access__title {

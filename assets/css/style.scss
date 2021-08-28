@@ -1,7 +1,8 @@
-@import './pc/common/common';
 @import './pc/common/animation';
 @import './pc/common/color';
 @import './pc/common/fontSize';
+@import './pc/common/common';
+@import './pc/common/decorate';
 
 @import './pc/layout/header';
 @import './pc/layout/footer';
@@ -36,4 +37,3 @@
     @import './sp/project/sns';
     @import './sp/project/twitter';
 }
-

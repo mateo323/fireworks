@@ -1,0 +1,49 @@
+// 装飾、デコレーション
+.-deco{
+    &__flower{
+        &-1{
+            &::before{
+                content: "";
+                width: 324px;
+                height: 292px;
+                background: url(./../image/flower_5.svg) no-repeat center/cover;
+                position: absolute;
+                top: 0px;
+                right: 0;
+                z-index: 2;
+            }
+        }
+        &-2{
+            &::before{
+                content: "";
+                width: 324px;
+                height: 292px;
+                background: url(./../image/flower_1.svg) no-repeat center/cover;
+                position: absolute;
+                top: -130px;
+            }
+        }
+
+        &-3{
+            &::before{
+                content: "";
+                width: 443px;
+                height: 380px;
+                background: url(./../image/flower_1.svg) no-repeat center/cover;
+                position: absolute;
+                top: -130px;
+            }
+        }
+        &-4{
+            &::after{
+                content: "";
+                width: 338px;
+                height: 240px;
+                background: url(./../image/flower_2.svg) no-repeat center/cover;
+                position: absolute;
+                top: -100px;
+                right: 0;
+            }
+        }
+    }
+}
