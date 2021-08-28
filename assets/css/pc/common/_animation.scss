@@ -1,0 +1,46 @@
+@keyframes hnb{
+    0%{border-radius: 1px; width: 2px; height: 2px; border: 6px dotted darkyellow;top:200px;left:150px;}
+    50%{border-radius: 1px; width: 2px; height: 2px; border: 6px dotted yellow;top:0px;left:150px;}
+    70%{border-radius: 60px; width: 120px; height: 120px; border: 6px dotted blue;top:-60px;left:90px;}
+    90%{border-radius: 100px; width: 200px; height: 200px; border: 8px dotted red;top:-100px;left:50px;}
+    100%{border-radius: 100px; width: 200px; height: 200px; border: 8px dotted #ff000000;top:-80px;left:50px;}
+}
+.hnbdm{
+    display:inline-block;
+    position:absolute;
+    color:white;
+    animation:hnb 5s linear infinite normal;
+}
+
+@keyframes hanabi{
+	0%{
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	20%{
+		opacity: 0.6;
+		transform: scale(1);
+	}
+	60%{
+		opacity: 0.5;
+		transform: scale(1.1);
+	}
+    80%{
+        opacity: 0.1;
+    }
+	100%{
+		opacity: 0;
+		transform: scale(1.2) translateY(20px);
+	}
+}
+.hanabi{
+    width: 80%;
+    img{
+        width: 100%;
+    }
+    position: absolute;
+    animation-name: hanabi;
+    animation-timing-function:linear;
+    animation-iteration-count :infinite;
+    animation-duration:3s;
+}
