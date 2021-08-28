@@ -1,0 +1,35 @@
+@import './pc/common/common';
+@import './pc/layout/header';
+@import './pc/layout/footer';
+
+@import './pc/component/header';
+@import './pc/component/footer';
+@import './pc/component/button';
+@import './pc/component/humMenu';
+
+@import './pc/project/mainVisual';
+@import './pc/project/fireWorks';
+@import './pc/project/cruise';
+@import './pc/project/date';
+@import './pc/project/access';
+@import './pc/project/sns';
+@import './pc/project/twitter';
+
+@media screen and (max-width:600px) {
+    // @import './sp/layout/header';
+    @import './sp/layout/footer';
+
+    @import './sp/component/header';
+    @import './sp/component/footer';
+    @import './sp/component/button';
+    @import './sp/component/humMenu';
+
+    @import './sp/project/mainVisual';
+    @import './sp/project/fireWorks';
+    @import './sp/project/cruise';
+    @import './sp/project/date';
+    @import './sp/project/access';
+    @import './sp/project/sns';
+    @import './sp/project/twitter';
+}
+

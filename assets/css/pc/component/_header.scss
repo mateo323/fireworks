@@ -1,0 +1,25 @@
+// @import '../common/common';
+.c-header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    &__logo{
+        width: 58px;
+    }
+    &__nav{
+        &-items{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;    
+        }
+        &-item{
+            color: $white;
+            font-size: $pc-nav;
+            margin-left: 70px;
+        }
+    }
+}

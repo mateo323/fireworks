@@ -1,0 +1,20 @@
+.p-twitter{
+    &__title{
+        margin-top: 120px;
+        font-size: $sp-title;
+    }
+    &__text{
+        font-size: $sp-text;
+        line-height: $sp-text-lh;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 18px;
+        span{
+            display: inline-block;
+        }
+    }
+    &__api{
+        width: 90%;
+    }
+}

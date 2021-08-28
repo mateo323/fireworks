@@ -1,0 +1,20 @@
+.c-footer{
+    &__nav{
+        display: none;
+    }
+
+    &__address{
+        font-size: $sp-nav;
+        margin: 0 auto;
+        padding: 44px 0;
+        .-br{
+            display: inline-block;
+        }
+        .-sp{
+            margin-top: 22px;
+        }
+    }
+    &__copyright{
+        padding-bottom: 32px;
+    }
+}

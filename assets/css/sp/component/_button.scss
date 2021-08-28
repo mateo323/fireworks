@@ -1,0 +1,13 @@
+.c-Button{
+    width: 300px;
+    height: 60px;
+    font-size: $sp-button;
+
+    &.-cruise{
+        position: static;
+        margin-top: 32px;
+    }
+    &.-access{
+        margin-top: 32px;
+    }
+}

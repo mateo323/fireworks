@@ -1,0 +1,27 @@
+.p-cruise{
+    &__title{
+        font-size: $sp-title;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 32px;
+        text-align: left;
+        span{
+            display: inline-block;
+        }
+    }
+    &__text{
+        padding: 0;
+        padding-top: 40px;
+        font-size: $sp-text;
+        line-height: $sp-text-lh;
+        &-bg{
+            min-height: fit-content;
+            margin: 0;
+            background: none;
+        }
+    }
+    &__imageSp{
+        display: block;
+    }
+}

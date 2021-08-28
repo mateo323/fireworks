@@ -1,0 +1,23 @@
+.p-cruise{
+    &__title{
+        text-align: center;
+        margin-top: 160px;
+    }
+    &__text{
+        &-bg{
+            width: 100%;
+            min-height: 800px;
+            background: url(../image/cruise-bg.jpg) no-repeat center/cover;
+            margin-top: 50px;
+            position: relative;
+        }
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 170px;
+        font-size: $pc-text;
+        line-height: $pc-text-lh;
+    }
+    &__imageSp{
+        display: none;
+    }
+}

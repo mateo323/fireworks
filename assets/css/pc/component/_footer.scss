@@ -1,0 +1,26 @@
+.c-footer{
+    &__nav{
+        padding-top: 68px;
+        &-items{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__address{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 44px;
+    }
+    &__copyright{
+        display: block;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    &__inquiry{
+        display: block;
+        color: $inquiry;
+        text-decoration: underline;
+    }
+}

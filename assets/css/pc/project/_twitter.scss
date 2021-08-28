@@ -1,0 +1,16 @@
+.p-twitter{
+    &__title{
+        text-align: center;
+        margin-top: 280px;
+    }
+    &__text{
+        text-align: center;
+        font-size: $pc-text;
+        line-height: $pc-text-lh;
+    }
+    &__api{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}

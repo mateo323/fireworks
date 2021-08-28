@@ -1,0 +1,64 @@
+.p-date{
+    min-height: 880px;
+    margin-top: 280px;
+    background: url(../image/date-bg.jpg) no-repeat center/cover;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 100%;
+        min-height: 880px;
+        background-color: $bg;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    &__title{
+        text-align: center;
+        padding-top: 70px;
+        position: relative;
+        z-index: 3;
+    }
+    &__map{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+        opacity: 0.8;
+        img{
+            height: 400px;
+        }
+        position: relative;
+        z-index: 3;
+    }
+    &__info{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        font-size: $pc-text;
+        position: relative;
+        z-index: 3;
+        &-date{
+            &-warn{
+                font-size: $pc-nav;
+                margin-top: 37px;
+            }
+        }
+        &-date,&-place{
+            width: 455px;
+            margin: 0 auto;
+            // background-color: aqua;
+            span{
+                display: inline-block;
+            }
+        }
+        &-warn{
+            display: none;
+        }
+    }
+}

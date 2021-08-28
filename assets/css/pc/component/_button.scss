@@ -1,0 +1,52 @@
+.c-Button{
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: $pc-button;
+    transition: .3s;
+
+    &__icon{
+        display: flex;
+        margin-right: 10px;
+        path{
+            fill: $white;
+            transition: .3s;
+        }
+    }
+    
+    &.-cruise{
+        background-color: $main;
+        color: $white;
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        right: 0;
+        
+        &:hover{
+            background-color: $white;
+            color: $main;
+            path{
+                fill: $main;
+            }
+        }
+    }
+    &.-access{
+        background-color: $sub;
+        color: $white;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        &:hover{
+            background-color: $white;
+            color: $sub;
+            path{
+                fill: $sub;
+            }
+        }
+    }
+}

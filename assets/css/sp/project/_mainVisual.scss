@@ -1,0 +1,24 @@
+.p-mainVisual{
+    background-position: 35% 20%;
+    &__text{
+        font-size: $sp-mainV;
+        line-height: 40px;
+        left: 32px;
+        bottom: 85px;
+        .-small{
+            font-size: $sp-mainV-small;
+            line-height: 28px;
+        }
+        .-medium{
+            font-size: $sp-mainV-medium;
+        }
+        .-big{
+            font-size: $sp-mainV-large;
+        }
+    }
+
+    &.-cruise{
+        position: static;
+    }
+    
+}

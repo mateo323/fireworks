@@ -1,0 +1,36 @@
+.p-fireWorks{
+    &__title{
+        text-align: center;
+        margin-top: 160px;
+    }
+    &__text{
+        &-bg{
+            width: 100%;
+            height: 100vh;
+            background: url(../image/fireWorks-bg.jpg) no-repeat center/cover;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 100vh;
+                background-color: $bg;
+                opacity: 0.3;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
+        width: 80%;
+        bottom: 40px;
+        font-size: $pc-text;
+        line-height: $pc-text-lh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 3;
+    }
+}

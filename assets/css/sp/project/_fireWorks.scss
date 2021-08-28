@@ -1,0 +1,13 @@
+.p-fireWorks{
+    &__title{
+        font-size: $sp-title;
+    }
+    &__text{
+        font-size: $sp-text;
+        line-height: $sp-text-lh;
+
+        &-bg{
+            background-position: 25% 20%;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.p-mainVisual{
+    width: 100%;
+    height: 100vh;
+    background: url(../image/mainVisual.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+    &__text{
+        font-size: $pc-mainV;
+        color: $white;
+        position: absolute;
+        bottom: 40px;
+        left: 80px;
+        line-height: 90px;
+        z-index: 3;
+        .-br{
+            display: inline-block;
+        }
+        .-big{
+            font-size: $pc-mainV-large;
+        }
+        .-medium{
+            font-size: $pc-mainV-medium;
+        }
+        .-small{
+            font-size: $pc-mainV-small;
+            line-height: 30px;
+        }
+
+        .-red{
+            color: $main;
+        }
+        .-yellow{
+            color: $sub;
+        }
+    }
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100vh;
+        background-color: $bg;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
